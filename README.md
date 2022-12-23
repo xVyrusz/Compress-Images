@@ -14,3 +14,11 @@
 path  = os.path.join(cwd, 'COMPRESS_IMAGES') # Name the directory  where  will be created and saved the images
 path_img =  os.path.join(cwd, 'IMAGES_BIRLOS') # Match the name of directory where are the images to compress
 ```
+## if you want the original name of the images just erase 'compressed-'
+```Python
+img.save('compressed-'+ img_name, optimize=True, quality=30)
+```
+## Like this
+```Python
+img.save(img_name, optimize=True, quality=30)
+```
