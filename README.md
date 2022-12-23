@@ -16,9 +16,13 @@ path_img =  os.path.join(cwd, 'IMAGES_BIRLOS') # Match the name of directory whe
 ```
 ## if you want the original name of the images just erase 'compressed-'
 ```Python
+check_img = os.path.join(check, 'compressed-'+ img_name)
+
 img.save('compressed-'+ img_name, optimize=True, quality=30)
 ```
 ## Like this
 ```Python
+check_img = os.path.join(check, img_name)
+
 img.save(img_name, optimize=True, quality=30)
 ```
